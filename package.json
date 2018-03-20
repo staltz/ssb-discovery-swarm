@@ -1,0 +1,36 @@
+{
+  "name": "ssb-discovery-swarm",
+  "version": "1.0.0",
+  "description": "Scuttlebot plugin that exchanges invites with other sbots in a DHT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staltz/ssb-discovery-swarm.git"
+  },
+  "main": "lib/index.js",
+  "author": "staltz.com",
+  "license": "MIT",
+  "keywords": [
+    "ssb",
+    "discovery-swarm"
+  ],
+  "dependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "8.x.x",
+    "debug": "^3.1.0",
+    "discovery-swarm": "^5.0.0",
+    "pull-stream": "^3.6.2",
+    "rxjs": "^5.5.7",
+    "ssb-typescript": "^1.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2",
+    "scuttle-testbot": "1.1.6",
+    "ssb-keys": "^7.0.14",
+    "tape": "4.9.0"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "pretest": "npm run compile",
+    "test": "tape test.js"
+  }
+}
